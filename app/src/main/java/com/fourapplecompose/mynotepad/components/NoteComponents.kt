@@ -14,18 +14,15 @@ import androidx.compose.ui.text.input.ImeAction
 
 @OptIn(ExperimentalComposeUiApi::class)
 @Composable
-fun NoteUnputText(
+fun NoteInputText(
     modifier: Modifier = Modifier,
     text: String,
     label: String,
     maxLine: Int = 1,
     onTextChange: (String) -> Unit,
     onImeAction: () -> Unit = {}
-
 ) {
-
     val keyboardController = LocalSoftwareKeyboardController.current
-
     TextField(
         value = text,
         onValueChange =
@@ -45,8 +42,5 @@ fun NoteUnputText(
             keyboardController?.hide()
         }),
         modifier = modifier
-
-
         )
-
 }
