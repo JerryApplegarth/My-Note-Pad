@@ -58,26 +58,44 @@ fun NoteScreen() {
             NoteInputText(
                 text = account,
                 label = "Add Account Name",
-                onTextChange = {})
+                onTextChange = {
+                    if (it.all { char ->
+                        char.isDefined()
+                        }) account = it
+                })
             Spacer(modifier = Modifier.height(4.dp))
             NoteInputText(
                 text = user_name,
                 label = "Add User Name",
-                onTextChange = {})
+                onTextChange = {
+                    if (it.all { char ->
+                            char.isDefined()
+                        }) user_name = it
+                })
+
             Spacer(modifier = Modifier.height(4.dp))
             NoteInputText(
                 text = password,
                 label = "Enter Password",
-                onTextChange = {})
+                onTextChange = {
+                    if (it.all { char ->
+                        char.isDefined()
+                    }) password = it
+                })
             Spacer(modifier = Modifier.height(4.dp))
             NoteInputText(
                 text = note,
                 label = "Enter Some kind of note",
-                onTextChange = {})
+                onTextChange = {
+                    if (it.all { char ->
+                            char.isDefined()
+                        }) note = it
+                })
             Spacer(modifier = Modifier.height(16.dp))
             NoteButton(
                 text = "Save",
                 onClick = { /*TODO*/ })
+
         }
     }
 }
