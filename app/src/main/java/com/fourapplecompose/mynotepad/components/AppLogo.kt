@@ -26,8 +26,6 @@ import com.fourapplecompose.mynotepad.ui.theme.mediumGreen
 
 @Composable
 fun AppLogo() {
-
-
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -36,6 +34,7 @@ fun AppLogo() {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Spacer(modifier = Modifier.height(8.dp))
+
         Image(
             painter = painterResource(id = R.drawable.four_apple_jpg),
             contentDescription = stringResource(R.string.apple_logo),
@@ -86,15 +85,6 @@ fun AppLogo() {
             }
         )
 
-        Text(
-            text = stringResource(R.string.http_address,
-
-            ),
-            color = MaterialTheme.colors.secondaryVariant,
-            fontSize = 12.sp,
-            fontWeight = FontWeight.Bold,
-            fontStyle = FontStyle.Italic
-        )
     }
 }
 
