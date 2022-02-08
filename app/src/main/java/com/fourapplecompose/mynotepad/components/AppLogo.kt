@@ -39,22 +39,11 @@ fun AppLogo() {
             fontWeight = FontWeight.Bold,
             color = MaterialTheme.colors.mediumGreen
         )
-        Text(
-            text = stringResource(R.string.but_me_coffee),
-            modifier = Modifier.padding(4.dp)
-        )
-        Text(
-            text = stringResource(R.string.http_address,
+        MyUrl()
 
-            ),
-            color = MaterialTheme.colors.secondaryVariant,
-            fontSize = 12.sp,
-            fontWeight = FontWeight.Bold,
-            fontStyle = FontStyle.Italic
-        )
+
     }
 }
-
 
 
 @Preview(showBackground = true)

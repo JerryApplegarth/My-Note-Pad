@@ -8,6 +8,7 @@
     <string name="but_me_coffee">"Buy me a Coffee @ "</string>
     <string name="http_address"> "https://www.buymeacoffee.com/JerryApplegarth "</string>
     <string name="apple_logo">"Apple Logo"</string>
+    <string name="link">https://www.buymeacoffee.com/JerryApplegarth</string>
 
 
 </resources>
