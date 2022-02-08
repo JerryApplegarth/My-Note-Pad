@@ -70,6 +70,7 @@ fun AppLogo() {
             )
 
         }
+
         val uriHandler = LocalUriHandler.current
         ClickableText(
             modifier = Modifier
